@@ -2,11 +2,12 @@ import { useState } from "react";
 import Button from "./Button";
 
 const AddFriend = ({ onAddFriendToList }) => {
+    
     const [addFriendForm, setAddFriendForm] = useState({
       name: '',
       image: 'https://i.pravatar.cc/48',
     })
-
+    
     function handleSubmit(e) {
       e.preventDefault()
       if(!addFriendForm.name || !addFriendForm.image) return;
