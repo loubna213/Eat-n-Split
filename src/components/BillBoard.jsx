@@ -7,6 +7,7 @@ const BillBoard = ({ friends, selectedFriendId, onBalanceChange }) => {
     yourExpense: '',
     select: 'user',
   })
+  
   const paidByFriend = billForm.billValue ? billForm.billValue - billForm.yourExpense : '';
 
   const friendName = friends.map(friend => selectedFriendId === friend.id ? friend.name : '')
@@ -23,6 +24,7 @@ const BillBoard = ({ friends, selectedFriendId, onBalanceChange }) => {
     //   friendExpense: '',
     //   select: 'you',
     // })
+    
   }
 
   return (
