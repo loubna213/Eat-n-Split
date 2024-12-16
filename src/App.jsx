@@ -27,6 +27,7 @@ const initialFriends = [
 ];
 
 const App = () => {
+  
   const [friends, setFriends] = useState(initialFriends)
   const [addFriend, setAddFriend] = useState(false)
   const [selectedFriendId, setSelectedFriendId] = useState(null)
